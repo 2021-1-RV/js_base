@@ -19,7 +19,7 @@ if(x1 == 4){
 }
 
 let x2 = prompt("Стоимость покупки: ");
-if(x2 == 500 || x2 > 500){
+if(x2 >= 500){
     x3 = x2 * 0.02;
     console.log(`Вы получили скидку в 2%, ваша скидка: ${x3}`);
 }else{
@@ -29,3 +29,15 @@ if(x2 == 500 || x2 > 500){
 let x4 =prompt("введите число в гривнах:");
 let x5 =prompt("введите число в копейках:");
 console.log(`${x4} грн. ${x5} коп.`)
+
+let n1=2, n2=5, price1=24, price2=37, sum;
+sum=n1*price1 + n1*price2;
+console.log(sum);
+
+let sum2 = 200;
+if (sum2 < 10) {
+    sum2=sum2 *30
+}else{
+    sum2=sum2 -100
+}
+console.log(sum2)
