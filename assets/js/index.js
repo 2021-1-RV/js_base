@@ -1,0 +1,12 @@
+let x1="hello js", x2=100, x3=5.5, x4=true;
+const COLOR_RED='red';
+let a=5,h=10;
+let s= 1/2 * a * h;
+console.log(x1);
+console.log(x2);
+console.log(x3);
+console.log(x4);
+console.log(COLOR_RED);
+console.log('площадь треугольника', s);
+alert(`Result is: x1=${x1}, x2=${x2}, x3=${x3}, x4=${x4}, COLOR_RED=${COLOR_RED}`);
+alert(`Result is: ${s}`);
