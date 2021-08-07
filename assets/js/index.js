@@ -20,15 +20,22 @@ if(x1 == 4){
 
 let x2 = prompt("Стоимость покупки: ");
 if(x2 >= 500){
-    x3 = x2 * 0.02;
-    console.log(`Вы получили скидку в 2%, ваша скидка: ${x3}`);
+    x3 = x2 * 0.98;
+    console.log(`Вы получили скидку в 2%, сумма к оплате: ${x3}`);
 }else{
-    console.log("Ваша сумма покупки меньше 500 грн");
+    console.log(`Ваша сумма покупки меньше 500 грн, сумма к оплате без скидки ${x2} грн.`);
 }
 
-let x4 =prompt("введите число в гривнах:");
+/*let x4 =prompt("введите число в гривнах:");
 let x5 =prompt("введите число в копейках:");
 console.log(`${x4} грн. ${x5} коп.`)
+*/
+
+let x4 =prompt("введите число в гривнах и копейках через точку:");
+x5 = Math.trunc(x4);
+x6 = Math.round((x4%1)*100);
+console.log(`${x5} грн. ${x6} коп.`)
+
 
 let n1=2, n2=5, price1=24, price2=37, sum;
 sum=n1*price1 + n1*price2;
@@ -36,8 +43,8 @@ console.log(sum);
 
 let sum2 = 200;
 if (sum2 < 10) {
-    sum2=sum2 *30
+    sum2=sum2 *30;
 }else{
-    sum2=sum2 -100
+    sum2=sum2 -100;
 }
-console.log(sum2)
+console.log(sum2);
